@@ -1,0 +1,32 @@
+:root {
+  --black: #000;
+  --gray-500: #565656;
+  --gray-600: #757575
+  --violet: #2639ED;
+  --gray-100: #F4F9FF;
+  --gray-150: #EFF1FF;
+  --white: #FEFEFE;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-size: 100%;
+} 
+
+body {
+  width: 100vw;
+  background-color: #FCFDFF;
+  font-family: Inter, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;  
+}
