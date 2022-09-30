@@ -1,7 +1,7 @@
 :root {
   --black: #000;
   --gray-500: #565656;
-  --gray-600: #757575
+  --gray-600: #757575;
   --violet: #2639ED;
   --gray-100: #F4F9FF;
   --gray-150: #EFF1FF;
@@ -22,7 +22,7 @@ html, body {
 
 body {
   width: 100vw;
-  background-color: #FCFDFF;
+  background-color: var(--white);
   font-family: Inter, sans-serif;
 }
 
