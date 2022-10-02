@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import { Card } from '../components/Card/Index';
 
 import styles from '../styles/Home.module.scss';
 
@@ -76,6 +77,58 @@ function Home(){
                 </div>
               </div>
             </div>
+
+
+            <div className={styles.service}>
+                <div className={styles.serviceContent}>
+                  <div className={styles.left}>
+                    <h2>How can we help your Business?</h2>
+
+                    <p>We build readymade websites, mobile applications, and elaborate online business services.</p>
+                  </div>
+
+                  <div className={styles.right}>
+                    <div>
+                      <Card 
+                        color='#F1F7FF'
+                        className='one' 
+                        icon='box.svg'
+                        title='Business Idea Planning'
+                        description='We present you a proposal and discuss niffty-gritty like'
+                      />                      
+                      
+                      <Card 
+                        color='#FFF2F8'
+                        className='two'
+                        icon='code.svg'
+                        title='Development Website and App'
+                        description='Communication protocols apart from engagement models'
+                      />
+                    </div>
+
+
+                    <div>
+                      <Card 
+                        color='#FFF7E3'
+                        className='three'
+                        icon='empty-wallet.svg'
+                        title='Financial Planning System'
+                        description='Protocols apart from aengage models, pricing billing'
+                      />
+                      <Card 
+                        color='#DEFFEE'
+                        className='four'
+                        icon='chart-square.svg'
+                        title='Market Analysis Project'
+                        description='Protocols apart from aengage models, pricing billing'
+                      />
+                    </div>
+                  </div>
+                </div>
+            </div>
+
+
+            
           </main>
         </div>
       </>

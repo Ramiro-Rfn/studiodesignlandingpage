@@ -1,0 +1,48 @@
+.card {
+    box-shadow: 1px 1px 6px  var(--gray-150);
+    padding: 2rem;
+    width: 19rem;
+    height: 23rem;
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+
+    border-radius: 2.5rem;
+
+    .iconContainer {
+        width: 7.5rem;
+        height: 7.5rem;
+        border-radius: 1.25rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        background-color: #F1F7FF;
+
+        margin-bottom: 2rem;
+    }
+
+    .info {
+        h4 {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        p {
+            font-size: 1rem;
+            color: var(--gray-600);
+            text-align: center;
+        }
+    }
+
+    &.one {
+        margin-top: -60px;
+    }
+
+    &.three {
+        margin-top: -140px;
+    }
+}
