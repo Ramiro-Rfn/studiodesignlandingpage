@@ -1,4 +1,7 @@
+import { GetStaticProps } from 'next';
 import Head from 'next/head';
+import { FiFacebook, FiLinkedin, FiTwitter } from 'react-icons/fi';
+
 import { Card } from '../components/Card/Index';
 
 import styles from '../styles/Home.module.scss';
@@ -128,11 +131,111 @@ function Home(){
             </div>
 
 
-            
+            <div className={styles.project}>
+                <div className={styles.projectContent}>
+                  <div className={styles.left}>
+                  <iframe width="420" height="315"
+                  src="https://www.youtube.com/embed/ckumPkfEZQY">
+                  </iframe>
+
+                    <button>
+                    </button>
+                  </div>
+                  
+                  <div className={styles.right}>
+                    <h1>Great Digital Product Agency since 2016 </h1>
+
+                    <p>Our Business Plan is a written document describing a company's core business activites, Objectives, and how it plans to achieve its goals. Our goal is to provide our client high quality Product with modern idea accordingly their budgets and according thir reuirements.</p>
+                  </div>
+                </div>
+            </div>
+
+            <div className={styles.newsletterContainer}>
+              <div className={styles.newsletterContent}>
+                <div className={styles.left}>
+                  <h3>Subscribe Newsletter</h3>
+                  <p>I will update good news and promotion service not spam</p>
+                </div>
+
+                <div className={styles.formContainer}>
+                  <form action="">
+                    <input type="text" placeholder='Enter your email address' />
+                    <button>Contact Now</button>
+                  </form>
+                </div>
+              </div>
+            </div>
           </main>
+
+          <footer className={styles.footerContainer}>
+            <div className={styles.footerContent}>
+              <div className={styles.left}>
+                <a href="">
+                  <img src="/assets/logo.svg" alt="logo" />
+                </a>
+
+                <p>Leading digital agency with solid design and development expertise. We build readymade websites, mobile applications, and elaborate online business services.</p>
+
+                <div className={styles.socialMedias}>
+                  <a href="">
+                    <FiFacebook color='#fff' size={20}/>
+                  </a>
+
+                  <a href="">
+                    <FiTwitter color='#fff' size={20}/>
+                  </a>
+
+                  <a href="">
+                    <FiLinkedin color='#fff' size={20}/>
+                  </a>
+                </div>
+              </div>
+
+              <div className={styles.right}>
+                <div>
+                  <h4>What We Do</h4>
+                  <p>Web Disign</p>
+                  <p>App Design</p>
+                  <p>Social Media Manage</p>
+                  <p>Market Analysis Project</p>
+                </div>
+
+                <div>
+                  <h4>Company</h4>
+                  <p>Abaut Us</p>
+                  <p>Career</p>
+                  <p>Become Investor</p>
+                </div>
+
+                <div>
+                  <h4>Support</h4>
+                  <p>FAQ</p>
+                  <p>Policy</p>
+                  <p>Business</p>
+                </div>
+
+                <div>
+                  <h4>Contact</h4>
+                  <p>WhatsApp</p>
+                  <p>Support 24</p>
+                </div>
+              </div>
+            </div>
+          </footer>
         </div>
       </>
   )  
 }
 
 export default Home;
+
+
+export const getStaticProps: GetStaticProps = async () => {
+
+
+  return {
+    props : {
+      
+    }
+  }
+}
