@@ -169,56 +169,62 @@ function Home(){
 
           <footer className={styles.footerContainer}>
             <div className={styles.footerContent}>
-              <div className={styles.left}>
-                <a href="">
-                  <img src="/assets/logo.svg" alt="logo" />
-                </a>
-
-                <p>Leading digital agency with solid design and development expertise. We build readymade websites, mobile applications, and elaborate online business services.</p>
-
-                <div className={styles.socialMedias}>
+              <div className={styles.top}>
+                <div className={styles.left}>
                   <a href="">
-                    <FiFacebook color='#fff' size={20}/>
+                    <img src="/assets/logo.svg" alt="logo" />
                   </a>
 
-                  <a href="">
-                    <FiTwitter color='#fff' size={20}/>
-                  </a>
+                  <p>Leading digital agency with solid design and development expertise. We build readymade websites, mobile applications, and elaborate online business services.</p>
 
-                  <a href="">
-                    <FiLinkedin color='#fff' size={20}/>
-                  </a>
+                  <div className={styles.socialMedias}>
+                    <a href="">
+                      <FiFacebook color='#fff' size={20}/>
+                    </a>
+
+                    <a href="">
+                      <FiTwitter color='#fff' size={20}/>
+                    </a>
+
+                    <a href="">
+                      <FiLinkedin color='#fff' size={20}/>
+                    </a>
+                  </div>
+                </div>
+
+                <div className={styles.right}>
+                  <div>
+                    <h4>What We Do</h4>
+                    <p>Web Disign</p>
+                    <p>App Design</p>
+                    <p>Social Media Manage</p>
+                    <p>Market Analysis Project</p>
+                  </div>
+
+                  <div>
+                    <h4>Company</h4>
+                    <p>Abaut Us</p>
+                    <p>Career</p>
+                    <p>Become Investor</p>
+                  </div>
+
+                  <div>
+                    <h4>Support</h4>
+                    <p>FAQ</p>
+                    <p>Policy</p>
+                    <p>Business</p>
+                  </div>
+
+                  <div>
+                    <h4>Contact</h4>
+                    <p>WhatsApp</p>
+                    <p>Support 24</p>
+                  </div>
                 </div>
               </div>
 
-              <div className={styles.right}>
-                <div>
-                  <h4>What We Do</h4>
-                  <p>Web Disign</p>
-                  <p>App Design</p>
-                  <p>Social Media Manage</p>
-                  <p>Market Analysis Project</p>
-                </div>
-
-                <div>
-                  <h4>Company</h4>
-                  <p>Abaut Us</p>
-                  <p>Career</p>
-                  <p>Become Investor</p>
-                </div>
-
-                <div>
-                  <h4>Support</h4>
-                  <p>FAQ</p>
-                  <p>Policy</p>
-                  <p>Business</p>
-                </div>
-
-                <div>
-                  <h4>Contact</h4>
-                  <p>WhatsApp</p>
-                  <p>Support 24</p>
-                </div>
+              <div className={styles.bottom}>
+                <p>Copyright © 2022 Avi Yansah</p>
               </div>
             </div>
           </footer>
