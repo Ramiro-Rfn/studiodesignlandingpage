@@ -299,6 +299,7 @@
             color: var(--black);
             font-size: 2.5rem;
             margin-bottom: 2.5rem;
+            animation: slide-to-top 1s 1s ease-in;
         }
 
         p {
@@ -306,10 +307,40 @@
             font-size: 1rem;
             line-height: calc(1rem * 1.5);
             margin-bottom: 2rem;
+            animation: slide-to-top 1s 1s ease;
         }
 
     }
 }
+
+.testemonial {
+    width: 100%;
+    margin-top: 12rem;
+
+    .testemonialContent {
+        max-width: 1200px;
+        margin: 0 auto;
+
+        .title {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            h3 {
+                font-size: 2.5rem;
+                color: #000;
+                margin-bottom: 1rem;
+            }
+
+            p {
+                font-size: 1rem;
+                color: var(--gray-600);
+                margin-bottom: 113px;
+            }
+        }
+    }
+}
+
 
 .newsletterContainer {
     width: 100%;
@@ -501,5 +532,17 @@
         }
 
         
+    }
+} 
+
+@keyframes slide-to-top {
+    0% {
+        margin-top: 40px;
+        opacity: 0;
+    }
+
+    100% {
+        margin-top: 0;
+        opacity: 1;
     }
 }

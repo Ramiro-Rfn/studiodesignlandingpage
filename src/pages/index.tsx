@@ -3,6 +3,7 @@ import Head from 'next/head';
 import { FiFacebook, FiLinkedin, FiTwitter } from 'react-icons/fi';
 
 import { Card } from '../components/Card/Index';
+import { Slider } from '../components/Slider';
 
 import styles from '../styles/Home.module.scss';
 
@@ -148,6 +149,16 @@ function Home(){
                     <p>Our Business Plan is a written document describing a company's core business activites, Objectives, and how it plans to achieve its goals. Our goal is to provide our client high quality Product with modern idea accordingly their budgets and according thir reuirements.</p>
                   </div>
                 </div>
+            </div>
+
+            <div className={styles.testemonial}>
+              <div className={styles.testemonialContent}>
+                <div className={styles.title}>
+                  <h3>What our happy client say</h3>
+                  <p>Several selected clients, who already believe in our service.</p>
+                </div>
+                <Slider></Slider>
+              </div>
             </div>
 
             <div className={styles.newsletterContainer}>
