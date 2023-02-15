@@ -1,6 +1,7 @@
 import { GetStaticProps } from 'next';
 import Head from 'next/head';
-import { FiFacebook, FiLinkedin, FiTwitter } from 'react-icons/fi';
+import { useState } from 'react';
+import { FiFacebook, FiLinkedin, FiMenu, FiTwitter, FiX } from 'react-icons/fi';
 
 import { Card } from '../components/Card/Index';
 import { Slider } from '../components/Slider';
@@ -8,7 +9,17 @@ import { Slider } from '../components/Slider';
 import styles from '../styles/Home.module.scss';
 
 function Home(){
+  const [ isMenuOpen, setIsMenuOpen ] = useState(false);
+
+  function closeMenu() {
+    setIsMenuOpen(false)
+  }
+
+  function openMenu() {
+    setIsMenuOpen(true)
+  }
  
+  console.log(isMenuOpen)
   return (
       <>
         <Head>
@@ -19,7 +30,7 @@ function Home(){
             <div className={styles.headerContent}>
               <img src="/assets/logo.svg" alt="logo A+ Studio" />
 
-              <nav>
+              <nav className={isMenuOpen ? styles.active: ''}>
                 <ul>
                   <a href=""><li>Home</li></a>
 
@@ -33,7 +44,15 @@ function Home(){
 
                   <a href=""><li>Contact</li></a>
                 </ul>
+
+                <button onClick={closeMenu} className={styles.closeMenuButton}>
+                  <FiX color='#fff' size={24}/>
+                </button>
               </nav>
+
+              <button onClick={openMenu}>
+                <FiMenu color='#000' size={24}/>
+              </button>
             </div>
           </header>
 

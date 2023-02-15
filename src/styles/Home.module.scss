@@ -36,6 +36,10 @@
             margin-left: 1rem;
         }
     }
+
+    button {
+        display: none;
+    }
 }
 
 .hero {
@@ -325,6 +329,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            margin-bottom: 7rem;
 
             h3 {
                 font-size: 2.5rem;
@@ -335,7 +340,6 @@
             p {
                 font-size: 1rem;
                 color: var(--gray-600);
-                margin-bottom: 113px;
             }
         }
     }
@@ -345,8 +349,8 @@
 .newsletterContainer {
     width: 100%;
     position: relative;
-    margin-top: 148px;
-    margin-bottom: 146px;
+    margin-top: 9.25rem;
+    margin-bottom: 9.25rem;
 
     
     .newsletterContent {
@@ -361,7 +365,7 @@
         justify-content: space-between;
         position: relative;
 
-        padding: 90px;
+        padding: 5.625rem;
 
         &::after {
             content: '';
@@ -380,7 +384,7 @@
 
         &::before {
             content: '';
-            width: 500px;
+            width: 31.25;
             height: 100%;
             position: absolute;
             background-color: #2639ED;
@@ -412,7 +416,7 @@
         
 
         form {
-            width: 479px;
+            max-width: 479px;
             height: 80px;
             border-radius: calc(80px/2);
             background-color: #Fff;
@@ -544,5 +548,313 @@
     100% {
         margin-top: 0;
         opacity: 1;
+    }
+}
+
+@media (max-width: 1200px) {
+    .headerContainer {
+        .headerContent {
+            margin: 0 2.5rem;
+        }
+    }
+    .hero {
+
+        .heroContent {
+            margin: 0 2.5rem;
+        }
+    }
+
+    .ourClients {
+        .content {
+            margin: 0 2.5rem;
+        }
+    }
+
+    .service {
+        .serviceContent {
+            margin: 0 2.5rem;
+        }
+    }
+    
+    .project{
+        .projectContent{
+            margin: 0 2.5rem;
+        }
+    }
+
+    .testemonial{
+        .testemonialContent{
+            margin: 0 2.5rem;
+        }
+
+    }
+
+    .newsletterContainer{
+        .newsletterContent{
+            margin: 0 2.5rem;
+        }
+    }
+
+    .footerContainer {
+        .footerContent {
+            margin: 0 2.5rem;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .headerContainer {
+        overflow: hidden;
+        .headerContent {
+            margin: 2rem 2.5rem;
+
+            nav {
+                width: 100%;
+                position: absolute;
+                top: 4.5rem;
+                background-color: var(--violet);
+                left: 0;
+                z-index: 2;
+
+                display: none;
+
+                padding: 2rem;
+                transition: all 1000ms ease;
+
+                &.active {
+                    display: flex;
+                }
+                
+                ul {
+                    flex-direction: column;
+
+                    a {
+                        margin: 0;
+
+                        & + a {
+                            margin-top: 1rem;
+                        }
+                        
+                        li{
+                            color: #fff;
+                        }
+                    }
+                }
+
+                .closeMenuButton {
+                    display: block;
+                    background-color: transparent;
+                    position: absolute;
+                    top: 2rem;
+                    right: 2rem;
+                }
+            }
+
+
+            button {
+                width: 2rem;
+                height: 2rem;
+                border-radius: 0.5rem;
+                display: block;
+                background-color: transparent;
+            }
+        }
+    }
+
+    .hero {
+        height: 100%;
+        overflow: hidden;
+
+        .heroContent {
+            margin: 0 2.5rem;
+
+            .left {
+                width: 100%;
+                h1 {
+                    width: 100%;
+                }
+            }
+
+            .right {
+                display: none;
+            }
+        }
+    }
+
+    .ourClients {
+        margin-top: 100px;
+        margin-bottom: 3rem;
+        overflow: hidden;
+
+        .content {
+            margin: 0 2.5rem;
+            flex-direction: column;
+            display: block;
+            align-items: left;
+            
+            div {
+                margin-bottom: 2rem;
+            }
+
+            div.right {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 1rem 3rem;
+
+                align-items: none;
+                
+                a {
+                  &+a {
+                    margin: 0;
+                  }
+                }
+
+                img {
+                    width: 100px;
+                    margin: 0;
+                }
+            }
+        }
+    }
+
+    .service {
+        height: 100%;
+        margin-bottom: 3rem;
+
+        .serviceContent {
+            margin: 0 2.5rem;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .left {
+            width: 100%;
+            h1 {
+                width: 100%;
+            }
+        }
+
+        .right {
+            flex-direction: column;
+            align-items: center;
+
+            div {
+                margin: 0;
+                margin-bottom: 1rem;
+            }
+        }
+    }
+
+    .project{
+        .projectContent{
+            margin: 0 2.5rem;
+
+            flex-direction: column;
+            position: relative;
+
+            .left {
+                width: 100%;
+                height: 280px;
+                margin-bottom: 2rem;
+
+            }
+
+            .right {
+                width: 100%;
+                padding: 0;
+            }
+        }
+    }
+
+
+    .testemonial{
+        margin-top: 3rem;
+
+        .testemonialContent{
+            margin: 0 2.5rem;
+            flex-direction: column;
+
+            .title {
+                margin-bottom: 3.5rem;
+            }
+
+        }
+
+    }
+
+    .newsletterContainer{
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        .newsletterContent{
+            margin: 0 2.5rem;
+            flex-direction: column;
+            padding: 0;
+
+            background-color: transparent;
+
+            &::before {
+                content: '';
+                display: none;
+            }
+
+            .left {
+                width: 100%;
+                
+            }
+
+            .formContainer {
+                flex-direction: column;
+                padding: 1rem 2rem;
+
+                form {
+                    width: 100%;
+                    padding: 1rem;
+                    height: 60px;
+
+                    input {
+                        padding: 0  1rem;
+                        width: auto;
+                        height: 2rem;
+                    }
+
+                    button {
+                        width: 120px;
+                        height: 40px;
+                    }
+                }
+            }
+        }
+    }
+    
+    .footerContainer {
+        .footerContent {
+            margin: 0 2.5rem;
+
+            .top {
+                flex-direction: column;
+                padding: 2rem 0 0 0;
+
+                .left {
+                    margin-bottom: 2rem;
+                    width: 100%;
+
+                    p {
+                        width: 100%;
+                    }
+                }
+
+                .right {
+                    flex-direction: column;
+
+                    div {
+                        margin-bottom: 1rem;
+
+                        h4 {
+                            margin-bottom: 1rem;
+                        }
+                    }
+                }
+            }
+        }
     }
 }

@@ -30,3 +30,22 @@ a {
   color: inherit;
   text-decoration: none;  
 }
+
+
+@media (max-width: 1440px) {
+  html, body {
+    font-size: 87.5%;
+  }
+}
+
+@media (max-width: 400px) {
+  body {
+    width: 100%;
+  }
+}
+
+@media (max-width: 997px) {
+  .rightSection {
+    display: none;
+  }
+}
